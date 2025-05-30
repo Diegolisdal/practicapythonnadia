@@ -1,4 +1,4 @@
-# manejo error  division por cero
+# manejo error  division por cero y de insertar letras cuando se solicita un numero
 """
 try: 
     a=int(input("ingrese numero a: "))
