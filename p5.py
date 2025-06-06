@@ -1,4 +1,4 @@
-# definicion para validar float del error del tipo ValueError
+# definicion para validar TODOS los float del error del tipo ValueError
 def validar_float(mensaje):
     while True:
         try:
@@ -10,7 +10,7 @@ def validar_float(mensaje):
                            
         return valor
     
-# definicion para validar int del error del tipo ValueError    
+# definicion para validar TODOS los int del error del tipo ValueError    
 def validar_int(mensaje):
     while True:
         try:
@@ -21,12 +21,10 @@ def validar_int(mensaje):
             continue                           
                            
         return valor  
-numero = validar_float("ingrese un dividendo: ")
-numero1 = validar_int("ingrese un numero: ")
-""" aca incluyo valizar division cero
-divisor= validar("ingrese un divisor")
-while divisor == 0:
-    divisor= validar("ingrese un divisor")
-
-resultado= dividendo/divisor 
-"""
+    
+#como usar la validacion, en vez de usar peso=float(input("ingrese su peso: ")), uso    
+peso = validar_float("ingrese su peso: ")
+altura = validar_float("ingrese su altura en metros: ")
+#como usar la validacion, en vez de usar edad=int(input("ingrese su edad: ")), uso
+edad = validar_int("ingrese su edad: ")
+print(peso, altura, edad)
